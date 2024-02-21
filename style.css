@@ -1,0 +1,64 @@
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h1 span::before {
+    content: attr(data-content);
+    color: blue; 
+  }
+
+  h1 span::after {
+    content: attr(data-content);
+    color: pink; 
+  }
+  
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu select{
+    border: none;
+    color: aqua;
+    font-size: 20px;
+}
+
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer button {
+    background-color: pink; /* Fondo rosa */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 10px; /* Margen exterior */
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer button:first-child {
+    border-radius: 20px; 
+}
+
+footer button:last-child {
+    border-radius: 50%; /* Bordes redondeados */
+}
+
+@media (max-width: 480px) {
+    .menu {
+        display: none; /* Oculta la lista de navegación en pantallas pequeñas */
+    }
+}
